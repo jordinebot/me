@@ -7,26 +7,24 @@
     <title>Jordi Nebot { Web Developer }</title>
     <style type="text/css" media="screen">
         * {
-            font-family: sans-serif;
+            font-family: serif;
         }
         body {
-            background-color: #eeeeed;
-            color: #373737;
+            background-color: #fff;
+            color: #333;
             margin: 1em;
+            font-size: 150%;
         }
         img {
             display: block;
             max-width: 100%;
         }
-        @media only screen and (max-device-width: 800px) {
-            li > a {
-                display: inline-block;
-                padding: 0.45em 0;
-            }
+        h1,h2 {
+            font-weight: bold;
         }
-        #main {
+        .main-wrapper {
             width: 100%;
-            max-width: 1280px;
+            max-width: 1001px;
             margin: 0 auto;
         }
         #main-header {
@@ -38,88 +36,160 @@
         #main-header .description {
             font-size: 2em;
         }
+        @media only screen and (max-device-width: 800px) {
+            body {
+                font-size: 100%;
+            }
+            li > a {
+                display: inline-block;
+                padding: 0.45em 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <main id="main">
+    <div class="main-wrapper">
         <header id="main-header">
             <h1 class="name">Jordi Nebot</h1>
             <p class="description">Web Developer</p>
             <ul class="social-links">
-                <li class="link-item"><a target="_blank" href="https://github.com/jordinebot">GitHub</a></li>
-                <li class="link-item"><a target="_blank" href="http://stackoverflow.com/story/jordinebot">Stack Overflow</a></li>
-                <li class="link-item"><a target="_blank" href="https://linkedin.com/in/nebotjordi">LinkedIn</a></li>
+                <li class="link-item">
+                    <a target="_blank" href="https://github.com/jordinebot">GitHub</a>
+                </li>
+                <li class="link-item">
+                    <a target="_blank" href="http://stackoverflow.com/users/1534704/jordi-nebot?tab=profile">Stack Overflow</a>
+                </li>
+                <li class="link-item">
+                    <a target="_blank" href="https://linkedin.com/in/nebotjordi">LinkedIn</a>
+                </li>
             </ul>
         </header>
-        <section id="presentation">
-            <h2 class="section-title">About me</h2>
-            <p>Hi! I'm Jordi, a Web Developer based in <a target="_blank" href="https://goo.gl/maps/A7kNXmJSApt">Manresa</a> (Barcelona), with 5 years of agency experience mostly on brand & product websites, and another 3 years freelancing.</p>
-            <p>If you want more details on my career, please check my <a target="_blank" href="https://linkedin.com/in/nebotjordi">LinkedIn profile</a> and my <a target="_blank" href="http://stackoverflow.com/story/jordinebot">Developer Story</a>. If, for any reason, you need a classic resume I also have an <a download href="http://cv.jordinebot.cat">old school PDF</a> ready to download.</p>
-        </section>
-        <!--
-        <section id="tldr">
-            <h2>TL;DR</h2>
-            <blockquote>
-                <p>Booooring... Just show me <a href="">something cool</a>.</p>
-            </blockquote>
-        </section>
-        -->
-        <section id="works">
-            <h2 class="section-title">My work</h2>
-            <p>This is a curated selection of websites and single-page applications I've developed or contributed to, in no particular order.</p>
-            <ul class="private works">
-                <li class="project">
-                    <p class="title"><a href="">Urbaning App</a></p>
-                    <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
-                    <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consequatur non nisi optio. Porro illum deserunt vitae non magni beatae labore, molestiae ipsa odit nulla ad ullam iusto. Incidunt, soluta!</p>
-                </li>
-                <li class="project">
-                    <p class="title"><a href="">Nocilla</a></p>
-                    <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
-                    <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nihil eaque fuga laudantium tempore quis a tempora tenetur quas corporis, pariatur eligendi beatae iusto ullam. Sequi facilis quos velit obcaecati!</p>
-                </li>
-                <li class="project">
-                    <p class="title"><a href="">El Petit Sabadell</a></p>
-                    <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
-                    <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae qui cupiditate optio aut dolorum corporis, incidunt explicabo quia alias eius omnis quam sapiente temporibus nihil quibusdam ipsa, reiciendis! Iusto, tempore.</p>
-                </li>
-                <li class="project">
-                    <p class="title"><a href="">Cola Cao</a></p>
-                    <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
-                    <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel reiciendis earum, cum quisquam placeat maiores dolores esse repellat eum eaque porro, quis minima tempora! Architecto maiores doloribus veniam obcaecati eius!</p>
-                </li>
-                <li class="project">
-                    <p class="title"><a href="">El Born CCM</a></p>
-                    <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
-                    <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, aspernatur, nihil. Iusto facere enim vel, consequuntur explicabo maiores odio saepe delectus, nobis architecto, ab voluptatem debitis, perspiciatis omnis deserunt quia.</p>
-                </li>
-                <li class="project">
-                    <p class="title"><a href="">Project Title</a></p>
-                    <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
-                    <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente explicabo facilis incidunt, reiciendis iste suscipit consequatur tenetur aliquam distinctio, excepturi, repudiandae dicta eum, rerum adipisci ipsum asperiores at delectus. Nobis!</p>
-                </li>
+        <nav id="main-navigation">
+            <ul class="main-menu">
+                <li class="menu-item"><a href="#about-me">About me</a></li>
+                <li class="menu-item"><a href="#works">My work</a></li>
+                <li class="menu-item"><a href="#skills">My skills</a></li>
+                <li class="menu-item"><a href="#contact">Contact me</a></li>
+                <li class="menu-item"><a href="#footnotes">Footnotes</a></li>
             </ul>
-            <p>If you're curious, I've also coded some open-source stuff...</p>
-            <ul class="public works">
-                <li class="project">
-                    <p class="title"><a href="">Project Title</a></p>
-                    <a href=""><img src="img/placeholder.png" alt="Project Thumbnail"></a>
-                    <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi officiis nobis libero id optio ex necessitatibus soluta illo obcaecati qui veniam voluptate adipisci laboriosam, pariatur neque quia perferendis repudiandae voluptatibus.</p>
-                </li>
-                <li class="project">
-                    <p class="title"><a href="">Project Title</a></p>
-                    <a href=""><img src="img/placeholder.png" alt="Project Thumbnail"></a>
-                    <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quisquam iusto blanditiis laboriosam corporis adipisci veniam reiciendis. Accusamus quas qui dolores nam mollitia, sint, praesentium rem ratione culpa voluptas sed!</p>
-                </li>
-                <li class="project">
-                    <p class="title"><a href="">Project Title</a></p>
-                    <a href=""><img src="img/placeholder.png" alt="Project Thumbnail"></a>
-                    <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis exercitationem, a aliquam molestiae aliquid voluptatum dicta earum obcaecati repellendus. Dolore ipsam consequatur possimus labore et, quisquam velit maxime sint excepturi!</p>
-                </li>
-            </ul>
-
-        </section>
-    </main>
+        </nav>
+        <main id="main-content">
+            <section id="about-me">
+                <h2 class="section-title">About me</h2>
+                <p>I'm a Web Developer based in <a target="_blank" href="https://goo.gl/maps/fYa2hb9b8Hw">Manresa</a> (Barcelona), with 5 years of agency experience mostly on brand & product websites, and another 3 years freelancing.</p>
+                <h3 class="read-more">Background</h3>
+                <p>I studied Computer Engineering at <acronym title="Universitat Autònoma de Barcelona">UAB</acronym> where even getting my Final Project with honors, I never actually had my Bachelor's Degree because I got stuck in last year's Compilers II course.</p>
+            </section>
+            <!--
+            <section id="tldr">
+                <p>If you want more details on my career, please check my <a target="_blank" href="https://linkedin.com/in/nebotjordi">LinkedIn profile</a> and my <a target="_blank" href="http://stackoverflow.com/story/jordinebot">Developer Story</a>. If, for any reason, you need a classic resume I also have an <a download href="http://cv.jordinebot.cat">old school PDF</a> ready to download.</p>
+                <h2>TL;DR</h2>
+                <blockquote>
+                    <p>Booooring... Just show me <a href="">something cool</a>.</p>
+                </blockquote>
+            </section>
+            -->
+            <section id="works">
+                <h2 class="section-title">My work</h2>
+                <p>This is a curated selection of websites and single-page applications I've developed or contributed to, in no particular order.</p>
+                <ul class="private works">
+                    <li class="project">
+                        <p class="title"><a href="">Urbaning App</a></p>
+                        <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
+                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consequatur non nisi optio. Porro illum deserunt vitae non magni beatae labore, molestiae ipsa odit nulla ad ullam iusto. Incidunt, soluta!</p>
+                    </li>
+                    <li class="project">
+                        <p class="title"><a href="">Nocilla</a></p>
+                        <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
+                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nihil eaque fuga laudantium tempore quis a tempora tenetur quas corporis, pariatur eligendi beatae iusto ullam. Sequi facilis quos velit obcaecati!</p>
+                    </li>
+                    <li class="project">
+                        <p class="title"><a href="">El Petit Sabadell</a></p>
+                        <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
+                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae qui cupiditate optio aut dolorum corporis, incidunt explicabo quia alias eius omnis quam sapiente temporibus nihil quibusdam ipsa, reiciendis! Iusto, tempore.</p>
+                    </li>
+                    <li class="project">
+                        <p class="title"><a href="">Cola Cao</a></p>
+                        <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
+                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel reiciendis earum, cum quisquam placeat maiores dolores esse repellat eum eaque porro, quis minima tempora! Architecto maiores doloribus veniam obcaecati eius!</p>
+                    </li>
+                    <li class="project">
+                        <p class="title"><a href="">El Born CCM</a></p>
+                        <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
+                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, aspernatur, nihil. Iusto facere enim vel, consequuntur explicabo maiores odio saepe delectus, nobis architecto, ab voluptatem debitis, perspiciatis omnis deserunt quia.</p>
+                    </li>
+                    <li class="project">
+                        <p class="title"><a href="">Project Title</a></p>
+                        <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
+                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente explicabo facilis incidunt, reiciendis iste suscipit consequatur tenetur aliquam distinctio, excepturi, repudiandae dicta eum, rerum adipisci ipsum asperiores at delectus. Nobis!</p>
+                    </li>
+                </ul>
+                <p>If you're curious, I've also coded some open-source stuff...</p>
+                <ul class="public works">
+                    <li class="project">
+                        <p class="title"><a href="">Project Title</a></p>
+                        <a href=""><img src="img/placeholder.png" alt="Project Thumbnail"></a>
+                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi officiis nobis libero id optio ex necessitatibus soluta illo obcaecati qui veniam voluptate adipisci laboriosam, pariatur neque quia perferendis repudiandae voluptatibus.</p>
+                    </li>
+                    <li class="project">
+                        <p class="title"><a href="">Project Title</a></p>
+                        <a href=""><img src="img/placeholder.png" alt="Project Thumbnail"></a>
+                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quisquam iusto blanditiis laboriosam corporis adipisci veniam reiciendis. Accusamus quas qui dolores nam mollitia, sint, praesentium rem ratione culpa voluptas sed!</p>
+                    </li>
+                    <li class="project">
+                        <p class="title"><a href="">Project Title</a></p>
+                        <a href=""><img src="img/placeholder.png" alt="Project Thumbnail"></a>
+                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis exercitationem, a aliquam molestiae aliquid voluptatum dicta earum obcaecati repellendus. Dolore ipsam consequatur possimus labore et, quisquam velit maxime sint excepturi!</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="skills">
+                <h2 class="section-title">My skills</h2>
+                <p>This is an alphabetically ordered list of technologies I'm confident enough to work with in a professional production environment. I'm not gonna draw some fancy graph here saying I know 92% HTML or 84% JavaScript. Because what on earth does that even mean?</p>
+                <ul class="positive skills">
+                    <li class="skill">Angular 2</li>
+                    <li class="skill">AWS</li>
+                    <li class="skill">CoffeeScript</li>
+                    <li class="skill">CSS</li>
+                    <li class="skill">Express</li>
+                    <li class="skill">GeoServer</li>
+                    <li class="skill">Git</li>
+                    <li class="skill">Gulp</li>
+                    <li class="skill">HTML</li>
+                    <li class="skill">JavaScript</li>
+                    <li class="skill">MongoDB</li>
+                    <li class="skill">MySQL</li>
+                    <li class="skill">Node.js</li>
+                    <li class="skill">Open Layers 3</li>
+                    <li class="skill">PHP</li>
+                    <li class="skill">PostGIS</li>
+                    <li class="skill">TypeScript</li>
+                    <li class="skill">Wordpress</li>
+                </ul>
+                <p>On the other side, this is an (obviously) incomplete list of widely used languages and technologies I do not excel at. I know almost nothing of some of them and I could probably work with some others without great effort. Anyway, if you're looking for a ninja in something listed here, honestly, I'm not your guy.</p>
+                <ul class="negative skills">
+                    <li class="skill">C#</li>
+                    <li class="skill">C++</li>
+                    <li class="skill">Drupal</li>
+                    <li class="skill">Go</li>
+                    <li class="skill">Java</li>
+                    <li class="skill">Joomla</li>
+                    <li class="skill">Python</li>
+                    <li class="skill">Ruby on Rails</li>
+                    <li class="skill">Ruby</li>
+                    <li class="skill">Unity3D</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2 class="section-title">How to contact me</h2>
+                <p>For professional approaches, e-mail is my first choice. So, even if you got my number, please e-mail me at <a href="mailto:hola@jordinebot.cat">hola@jordinebot.cat</a>. If needed, you'll find my <a target="_blank" href="https://keybase.io/jordinebot/key.asc">PGP Public Key</a> as well as verified profiles and domains at <a target="_blank" href="https://keybase.io/jordinebot">Keybase</a>.</p>
+            </section>
+            <section id="footnotes">
+                <h2 class="section-title">Footnotes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolor, unde. Laudantium totam sapiente, similique, autem vero vitae doloremque ipsam consequatur blanditiis, eum nobis numquam adipisci molestiae nihil quod, ea.</p>
+            </section>
+        </main>
+    </div>
     <script type="text/javascript" charset="utf-8">
     </script>
 </body>
