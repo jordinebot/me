@@ -3,20 +3,27 @@
     font-family: 'Heebo', sans-serif;
     font-weight: 300;
 
-    h1, h2, h3, .project p.title {
+    h1, h2, h3, .project p.title  {
         font-family: 'Gentium Basic', serif;
+    }
+
+    a {
+        color: $main;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     #main-header {
         text-align: center;
     }
 
-
     .social-links {
         @include reset-list;
         .link-item {
             display: inline-block;
-            margin: 0 1em 0 0;
+            margin: 0 2em 0 0;
             opacity: 0.4;
             transition: opacity 300ms;
             &:last-child {
@@ -27,11 +34,30 @@
             }
         }
         .icon {
-            transform: scale(0.8);
             text-indent: -9999px;
         }
     }
 
+    .works {
+        @include reset-list;
+        .project {
+            padding: 1em;
+            margin: 1em 0;
+            &:nth-child(odd) {
+                background-color: $main;
+                margin: 1em -1em;
+                padding: 1em 2em;
+            }
+        }
+        .title {
+            font-size: 1.25em;
+            font-weight: bold;
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
 
     .skill {
         display: inline-block;
@@ -48,15 +74,13 @@
         width: 75%;
         &.positive {
             .skill {
-                background-color: #89bcff;
+                background-color: $positive-tag;
             }
         }
         &.negative {
             .skill {
-                background-color: #ff8989;
+                background-color: $negative-tag;
             }
         }
     }
-
-
 }

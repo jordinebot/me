@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jordi Nebot — Web Developer</title>
-    <style type="text/css" media="screen">
+    <style type="text/css" media="all">
         body {
             background-color: #fff;
             color: #333;
@@ -29,9 +29,10 @@
         }
         #main-header .name {
             font-size: 3em;
+            margin-bottom: 0;
         }
         #main-header .description {
-            font-size: 2em;
+            font-size: 1.5em;
         }
         @media only screen and (max-device-width: 800px) {
             body {
@@ -48,7 +49,7 @@
     <div class="main-wrapper">
         <header id="main-header">
             <h1 class="name">Jordi Nebot</h1>
-            <p class="description">Web Developer</p>
+            <span class="description">Web Developer</span>
             <ul class="social-links">
                 <li class="link-item">
                     <a target="_blank" href="https://github.com/jordinebot"><span class="icon icon-github">GitHub</span></a>
@@ -211,12 +212,16 @@
                 stylesheet.href = src;
                 stylesheet.rel = 'stylesheet';
                 stylesheet.type = 'text/css';
+                stylesheet.media = 'screen';
                 document.getElementsByTagName('head')[0].appendChild(stylesheet);
             }
         }
         loadStyleSheet('https://fonts.googleapis.com/css?family=Gentium+Basic|Heebo:300,700');
         loadStyleSheet('css/style.css');
     </script>
-    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Basic|Heebo:300,700">
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
 </body>
 </html>
