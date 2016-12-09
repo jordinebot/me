@@ -1,2 +1,39 @@
 .enhance1 {
+
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+
+    h1, h2, h3, .project p.title {
+        font-family: 'Gentium Basic', serif;
+    }
+
+
+
+    .skill {
+        display: inline-block;
+        border-radius: 3px;
+        padding: 0.25em 0.5em;
+        margin: 0 0.25em 0.5em 0;
+        font-size: 0.75em;
+        font-weight: 700;
+        color: white;
+    }
+
+    .skills {
+        list-style: none;
+        padding: 0;
+        width: 75%;
+        &.positive {
+            .skill {
+                background-color: #89bcff;
+            }
+        }
+        &.negative {
+            .skill {
+                background-color: #ff8989;
+            }
+        }
+    }
+
+
 }
