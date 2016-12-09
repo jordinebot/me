@@ -1,0 +1,27 @@
+{
+  "name": "me",
+  "version": "0.1.0",
+  "description": "My website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordinebot/me.git"
+  },
+  "author": "Jordi Nebot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordinebot/me/issues"
+  },
+  "homepage": "https://github.com/jordinebot/me#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}

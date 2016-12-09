@@ -31,7 +31,7 @@
             text-align: left;
         }
         #main-header .name {
-            font-size: 3.5em;
+            font-size: 3em;
         }
         #main-header .description {
             font-size: 2em;
@@ -62,6 +62,9 @@
                 <li class="link-item">
                     <a target="_blank" href="https://linkedin.com/in/nebotjordi">LinkedIn</a>
                 </li>
+                <li class="link-item">
+                    <a target="_blank" href="mailto:hola@jordinebot.cat">e-mail</a>
+                </li>
             </ul>
         </header>
         <nav id="main-navigation">
@@ -79,6 +82,7 @@
                 <p>I'm a Web Developer based in <a target="_blank" href="https://goo.gl/maps/fYa2hb9b8Hw">Manresa</a> (Barcelona), with 5 years of agency experience mostly on brand & product websites, and another 3 years freelancing.</p>
                 <h3 class="read-more">Background</h3>
                 <p>I studied Computer Engineering at <acronym title="Universitat Autònoma de Barcelona">UAB</acronym> where even getting my Final Project with honors, I never actually had my Bachelor's Degree because I got stuck in last year's Compilers II course.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatibus, sequi maxime omnis eaque incidunt saepe, ex quas! Nisi totam accusamus, repellat facere aliquam fuga et exercitationem deserunt reprehenderit numquam.</p>
             </section>
             <!--
             <section id="tldr">
@@ -190,7 +194,31 @@
             </section>
         </main>
     </div>
+    <!--
+    <div class="progressive-enhancement">
+        <ol class="enhancement-levels">
+            <li class="level">None</li>
+            <li class="level">Basic</li>
+            <li class="level">Intermediate</li>
+            <li class="level">Full</li>
+        </ol>
+    </div>
+    -->
     <script type="text/javascript" charset="utf-8">
+        /* Credit: http://stackoverflow.com/a/22255132/1534704 */
+        function loadStyleSheet(src) {
+            if (document.createStyleSheet) {
+                document.createStyleSheet(src);
+            } else {
+                var stylesheet = document.createElement('link');
+                stylesheet.href = src;
+                stylesheet.rel = 'stylesheet';
+                stylesheet.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(stylesheet);
+            }
+        }
+        loadStyleSheet('css/style.css');
     </script>
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
 </body>
 </html>
