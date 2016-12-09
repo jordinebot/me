@@ -7,6 +7,30 @@
         font-family: 'Gentium Basic', serif;
     }
 
+    #main-header {
+        text-align: center;
+    }
+
+
+    .social-links {
+        @include reset-list;
+        .link-item {
+            display: inline-block;
+            margin: 0 1em 0 0;
+            opacity: 0.4;
+            transition: opacity 300ms;
+            &:last-child {
+                margin: 0;
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        .icon {
+            transform: scale(0.8);
+            text-indent: -9999px;
+        }
+    }
 
 
     .skill {
@@ -20,8 +44,7 @@
     }
 
     .skills {
-        list-style: none;
-        padding: 0;
+        @include reset-list;
         width: 75%;
         &.positive {
             .skill {
