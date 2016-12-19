@@ -1,36 +1,38 @@
-.icon {
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-image: url(../img/iconsprite.svg);
+.enhance1 {
+    .icon {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url(../img/iconsprite.svg);
+    }
 }
 .icon-mail {
-  width: 32px;
-  height: 32px;
-  background-position: 0 0;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
 }
 .icon-github {
-  width: 27px;
-  height: 32px;
-  background-position: -48px 0;
+    width: 27px;
+    height: 32px;
+    background-position: -48px 0;
 }
 .icon-mail-alt {
-  width: 32px;
-  height: 32px;
-  background-position: -96px 0;
+    width: 32px;
+    height: 32px;
+    background-position: -96px 0;
 }
 .icon-linkedin {
-  width: 27px;
-  height: 32px;
-  background-position: -144px 0;
+    width: 27px;
+    height: 32px;
+    background-position: -144px 0;
 }
 .icon-stackoverflow {
-  width: 27px;
-  height: 32px;
-  background-position: -192px 0;
+    width: 27px;
+    height: 32px;
+    background-position: -192px 0;
 }
 .icon-stackexchange {
-  width: 23px;
-  height: 32px;
-  background-position: -240px 0;
+    width: 23px;
+    height: 32px;
+    background-position: -240px 0;
 }
 

@@ -1,8 +1,49 @@
 $main: #ff425b;
 $positive-tag: #89bcff;
 $negative-tag: #ff8989;
+$quote: #696969;
 
 @mixin reset-list() {
     list-style: none;
     padding: 0;
+}
+
+/* Breakpoints */
+$small:  800px;
+$medium: 1280px;
+$large:  1440px;
+
+/* Media Queries */
+@mixin respond-to($media) {
+    @each $size in $media {
+        @if $size == "small" {
+            @media only screen and (max-width: $small) {
+                @content;
+            }
+        }
+        @else if $size == "medium" {
+            @media only screen and (min-width: $small + 1) and (max-width: $medium - 1) {
+                @content;
+            }
+        }
+        @else if $size == "large" {
+            @media only screen and (min-width: $medium) and (max-width: $large) {
+                @content;
+            }
+        }
+        @else if $size == "huge" {
+            @media only screen and (min-width: $large + 1) {
+                @content;
+            }
+        }
+    }
+}
+
+/* Clearfix */
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }

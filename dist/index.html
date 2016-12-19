@@ -19,11 +19,6 @@
         h1, h2 {
             font-weight: bold;
         }
-        .main-wrapper {
-            width: 100%;
-            max-width: 1001px;
-            margin: 0 auto;
-        }
         #main-header {
             text-align: left;
         }
@@ -43,11 +38,14 @@
                 padding: 0.45em 0;
             }
         }
+        .icon {
+            background: none;
+        }
     </style>
 </head>
 <body class="enhance1">
     <div class="main-wrapper">
-        <header id="main-header">
+        <header id="main-header" class="inner-wrapper">
             <h1 class="name">Jordi Nebot</h1>
             <span class="description">Web Developer</span>
             <ul class="social-links">
@@ -65,22 +63,28 @@
                 </li>
             </ul>
         </header>
+        <!--
         <nav id="main-navigation">
             <ul class="main-menu">
                 <li class="menu-item"><a href="#about-me">About me</a></li>
                 <li class="menu-item"><a href="#works">My work</a></li>
                 <li class="menu-item"><a href="#skills">My skills</a></li>
                 <li class="menu-item"><a href="#contact">Contact me</a></li>
-                <li class="menu-item"><a href="#footnotes">Footnotes</a></li>
+                <li class="menu-item"><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
+        -->
         <main id="main-content">
-            <section id="about-me">
+            <section id="about-me" class="inner-wrapper">
                 <h2 class="section-title">About me</h2>
-                <p>I'm a Web Developer based in <a target="_blank" href="https://goo.gl/maps/fYa2hb9b8Hw">Manresa</a> (Barcelona), with 5 years of agency experience mostly on brand & product websites, and another 3 years freelancing.</p>
-                <h3 class="read-more">Background</h3>
-                <p>I studied Computer Engineering at <acronym title="Universitat Autònoma de Barcelona">UAB</acronym> where even getting my Final Project with honors, I never actually had my Bachelor's Degree because I got stuck in last year's Compilers II course.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatibus, sequi maxime omnis eaque incidunt saepe, ex quas! Nisi totam accusamus, repellat facere aliquam fuga et exercitationem deserunt reprehenderit numquam.</p>
+                <p>I'm a Web Developer based in <a class="inline" target="_blank" href="https://goo.gl/maps/fYa2hb9b8Hw">Manresa</a> (Barcelona), with 5 years of agency experience mostly on brand & product websites, and another 3 years freelancing.</p>
+                <h3 class="section-title">Background</h3>
+                <p>My first approach to computer's world was gaming on a <a class="inline" href="https://en.wikipedia.org/wiki/ZX_Spectrum" target="_blank">ZX Spectrum +2</a> when I was a kid. Wondering myself how that amazing machine worked I first discovered the existence of a thing called <a class="inline" href="https://en.wikipedia.org/wiki/BASIC" target="_blank"><acronym title="Beginner's All-purpose Symbolic Instruction Code">BASIC</acronym></a> and programming languages.</p>
+                <p>I was lucky enough my school offered a course on <em>Introduction to Programming</em> where I learned the basics of control flow statements, data types, boolean comparisons… It was amazing!</p>
+                <p>Later, in High School, I got into the Internet: IRC, Telnet <a class="inline" target="_blank" href="https://en.wikipedia.org/wiki/MUD"><acronym title="Multi-User Dungeon">MUD</acronym></a>'s, ICQ… and also GNU/Linux, free software, HTML, basic Javascript and I started learning how the World Wide Web was built.</p>
+                <p>The next obvious step was to study Computer Engineering, so I did it at <a class="inline" href="http://www.uab.cat/en/"><acronym title="Universitat Autònoma de Barcelona">UAB</acronym></a>. Those were very intense years of deep learning and growing and for this I'm so glad I took that decision.</p>
+                <h3 class="section-title">Career</h3>
+                <p>My first computer jobs were a System & Network Administration internship at <a class="inline" target="_blank" href="http://gabrmn.uab.es/"><acronym title="Grup d'Aplicacions Biomèdiques de la Ressonància Magnètica Nuclear">GABRMN</acronym></a> and Junior Software Developer at <a class="inline" target="_blank" href="http://www.maprotest.com/">Mapro</a>. Lately I've been working as Web Developer (this is what I really love!) at <a class="inline" target="_blank" href="http://www.havas-se.com/">Havas SE</a> and I'm currently freelancing. Feel free to check my <a class="inline" target="_blank" href="http://stackoverflow.com/story/jordinebot">Developer Story</a> and <a class="inline" target="_blank" href="https://linkedin.com/in/nebotjordi">LinkedIn</a> profile for further details.</p>
             </section>
             <!--
             <section id="tldr">
@@ -92,41 +96,66 @@
             </section>
             -->
             <section id="works">
-                <h2 class="section-title">My work</h2>
-                <p>This is a curated selection of websites and single-page applications I've developed or contributed to, in no particular order.</p>
+                <div class="inner-wrapper">
+                    <h2 class="section-title">My work</h2>
+                    <p>This is a curated selection of websites and single-page applications I've developed or contributed to, in no particular order.</p>
+                </div>
                 <ul class="private works">
+                    <!--
                     <li class="project">
-                        <p class="title"><a href="">Urbaning App</a></p>
+                        <p class="title"><a href="">Urbaning App</a><span class="client">Urbaning</span></p>
                         <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
-                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, consequatur non nisi optio. Porro illum deserunt vitae non magni beatae labore, molestiae ipsa odit nulla ad ullam iusto. Incidunt, soluta!</p>
+                        <p class="description">Single-Page Application running on GeoServer with a PostGIS-enabled PostgreSQL. The UI (by <strong>Creueta119</strong>) uses OpenLayers 3 to embed vector data layers over MapBox.</p>
                     </li>
+                    -->
                     <li class="project">
-                        <p class="title"><a href="">Nocilla</a></p>
-                        <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
-                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nihil eaque fuga laudantium tempore quis a tempora tenetur quas corporis, pariatur eligendi beatae iusto ullam. Sequi facilis quos velit obcaecati!</p>
+                        <p class="title"><a href="">Nocilla</a><span class="client">Havas SE</span></p>
+                        <a href=""><img src="img/nocilla_1.png" alt="Nocilla Website" class="thumbnail"></a>
+                        <p class="description">Brand & Product website for an spanish well-known hazelnut cocoa spread. Built as a Phalcon PHP MVC Application, uses Volt as view's template engine, CSS and CoffeeScript. CMS is also <em>ad-hoc</em> built using Phalcon PHP with Twitter's Bootstrap.</p>
                     </li>
+                    <!--
                     <li class="project">
-                        <p class="title"><a href="">El Petit Sabadell</a></p>
+                        <p class="title"><a href="">El Petit Sabadell</a><span class="client">Creueta 119</span></p>
                         <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
                         <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae qui cupiditate optio aut dolorum corporis, incidunt explicabo quia alias eius omnis quam sapiente temporibus nihil quibusdam ipsa, reiciendis! Iusto, tempore.</p>
                     </li>
+                    -->
+                    <!--
                     <li class="project">
-                        <p class="title"><a href="">Cola Cao</a></p>
+                        <p class="title"><a href="">Lava App</a><span class="client">Creueta 119</span></p>
                         <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
-                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel reiciendis earum, cum quisquam placeat maiores dolores esse repellat eum eaque porro, quis minima tempora! Architecto maiores doloribus veniam obcaecati eius!</p>
+                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae qui cupiditate optio aut dolorum corporis, incidunt explicabo quia alias eius omnis quam sapiente temporibus nihil quibusdam ipsa, reiciendis! Iusto, tempore.</p>
+                    </li>
+                    -->
+                    <li class="project">
+                        <p class="title"><a href="">El Born</a><span class="client">Creueta 119</span></p>
+                        <a href=""><img src="img/born_1.png" alt="Screenshot of El Born Centre de Cultura i Memòria's website" class="thumbnail"></a>
+                        <p class="description">Website for Barcelona's <a class="inline" href="https://en.wikipedia.org/wiki/Mercat_del_Born" target="_blank">Mercat del Born</a> that nowadays hosts a museum over <em class="quote" data-source="Wikipedia">the archaeological ruins which were part of the la Ribera district that was demolished in the early eighteenth century after the defeat of Catalonia in the War of Succession in 1714.</em></p>
                     </li>
                     <li class="project">
-                        <p class="title"><a href="">El Born CCM</a></p>
-                        <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
-                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, aspernatur, nihil. Iusto facere enim vel, consequuntur explicabo maiores odio saepe delectus, nobis architecto, ab voluptatem debitis, perspiciatis omnis deserunt quia.</p>
+                        <p class="title"><a href="">Cola Cao</a><span class="client">Havas SE</span></p>
+                        <a href=""><img src="img/colacao_1.png" alt="Project Thumbnail" class="thumbnail"></a>
+                        <p class="description">Website & CRM integration for this popular spanish chocolate drink. It uses the same Phalcon PHP MVC architecture with Volt template engine and <em>ad-hoc</em> CMS already used in Nocilla's site.</p>
                     </li>
                     <li class="project">
-                        <p class="title"><a href="">Project Title</a></p>
+                        <p class="title"><a href="">Banners, Marketing & Transactional e-mail</a><span class="client">Havas SE</span></p>
+                        <a href=""><img src="img/email_marketing_1.png" alt="Project Thumbnail" class="thumbnail"></a>
+                        <p class="description">During my agency years I coded dozens of welcome e-mails, password recoveries, promotion confirmations... as well as marketing newsletters for multiple brands and also (I know… I was young, I needed the money…) some HTML5 interactive banners.</p>
+                    </li>
+                    <li class="project">
+                        <p class="title"><a href="">La Piara</a><span class="client">Havas SE</span></p>
+                        <a href=""><img src="img/lapiara_1.png" alt="Project Thumbnail" class="thumbnail"></a>
+                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente explicabo facilis incidunt, reiciendis iste suscipit consequatur tenetur aliquam distinctio, excepturi, repudiandae dicta eum, rerum adipisci ipsum asperiores at delectus. Nobis!</p>
+                    </li>
+                    <!--
+                    <li class="project">
+                        <p class="title"><a href="">Mama's Place Store</a><span class="client">Mama's Place</span></p>
                         <a href=""><img src="img/placeholder.png" alt="Project Thumbnail" class="thumbnail"></a>
                         <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente explicabo facilis incidunt, reiciendis iste suscipit consequatur tenetur aliquam distinctio, excepturi, repudiandae dicta eum, rerum adipisci ipsum asperiores at delectus. Nobis!</p>
                     </li>
+                    -->
                 </ul>
-                <p>If you're curious, I've also coded some open-source stuff...</p>
+                <!--
                 <ul class="public works">
                     <li class="project">
                         <p class="title"><a href="">Project Title</a></p>
@@ -144,10 +173,11 @@
                         <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis exercitationem, a aliquam molestiae aliquid voluptatum dicta earum obcaecati repellendus. Dolore ipsam consequatur possimus labore et, quisquam velit maxime sint excepturi!</p>
                     </li>
                 </ul>
+                -->
             </section>
-            <section id="skills">
+            <section id="skills" class="inner-wrapper">
                 <h2 class="section-title">My skills</h2>
-                <p>This is an alphabetically ordered list of technologies I'm confident enough to work with in a professional production environment. I'm not gonna draw some fancy graph here saying I know 92% HTML or 84% JavaScript. Because what on earth does that even mean?</p>
+                <p>This is an alphabetically ordered list of technologies I'm confident enough to work with in a professional production environment. I'm not gonna draw some fancy graph here. What on earth does <em>90% HTML</em> even mean?</p>
                 <ul class="positive skills">
                     <li class="skill">Angular 2</li>
                     <li class="skill">AWS</li>
@@ -168,7 +198,7 @@
                     <li class="skill">TypeScript</li>
                     <li class="skill">Wordpress</li>
                 </ul>
-                <p>On the other side, this is an (obviously) incomplete list of widely used languages and technologies I do not excel at. I know almost nothing of some of them and I could probably work with some others without great effort. Anyway, if you're looking for a ninja in something listed here, honestly, I'm not your guy.</p>
+                <p>On the other side, this is an (obviously) incomplete list of widely used languages and technologies I do not excel at. I know almost nothing of some of them and I could probably work with some others without much effort. Anyway, if you're looking for a ninja in something listed here, honestly, I'm not your guy.</p>
                 <ul class="negative skills">
                     <li class="skill">C#</li>
                     <li class="skill">C++</li>
@@ -182,15 +212,34 @@
                     <li class="skill">Unity3D</li>
                 </ul>
             </section>
-            <section id="contact">
+            <section id="contact" class="inner-wrapper">
                 <h2 class="section-title">How to contact me</h2>
-                <p>For professional approaches, e-mail is my first choice. So, even if you got my number, please e-mail me at <a href="mailto:hola@jordinebot.cat">hola@jordinebot.cat</a>. If needed, you'll find my <a target="_blank" href="https://keybase.io/jordinebot/key.asc">PGP Public Key</a> as well as verified profiles and domains at <a target="_blank" href="https://keybase.io/jordinebot">Keybase</a>.</p>
+                <p>For professional approaches, e-mail is my first choice. So, even if you got my number, please e-mail me at <a class="inline" href="mailto:hola@jordinebot.cat">hola@jordinebot.cat</a>. If needed, you'll find my PGP Public Key as well as verified profiles and domains at <a class="inline" target="_blank" href="https://keybase.io/jordinebot">Keybase.io</a>.</p>
+                <p class="centered">
+                    <button class="cta" onclick="location.href='mailto:hola@jordinebot.cat'">Contact me</button>
+                </p>
             </section>
-            <section id="footnotes">
-                <h2 class="section-title">Footnotes</h2>
+            <section id="faq" class="inner-wrapper">
+                <h2 class="section-title">Some notes & questions</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolor, unde. Laudantium totam sapiente, similique, autem vero vitae doloremque ipsam consequatur blanditiis, eum nobis numquam adipisci molestiae nihil quod, ea.</p>
             </section>
         </main>
+        <footer id="main-footer">
+            <ul class="social-links">
+                <li class="link-item">
+                    <a target="_blank" href="https://github.com/jordinebot"><span class="icon icon-github">GitHub</span></a>
+                </li>
+                <li class="link-item">
+                    <a target="_blank" href="http://stackoverflow.com/users/1534704/jordi-nebot?tab=profile"><span class="icon icon-stackoverflow">Stack Overflow</span></a>
+                </li>
+                <li class="link-item">
+                    <a target="_blank" href="https://linkedin.com/in/nebotjordi"><span class="icon icon-linkedin">LinkedIn</span></a>
+                </li>
+                <li class="link-item">
+                    <a target="_blank" href="mailto:hola@jordinebot.cat"><span class="icon icon-mail">e-mail</span></a>
+                </li>
+            </ul>
+        </footer>
     </div>
     <!--
     <div class="progressive-enhancement">
