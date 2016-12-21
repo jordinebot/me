@@ -188,12 +188,11 @@
         font-weight: bold;
         font-size: 0.8em;
         color: white;
-        border: 2px solid white;
+        border: 2px solid $main;
         border-radius: 2em;
         &:hover {
             color: $main;
             background-color: white;
-            border: 2px solid $main;
         }
     }
 

@@ -50,3 +50,9 @@
         }
     }
 }
+
+body:not(.enhance2) {
+    .read-more {
+        display: none;
+    }
+}
