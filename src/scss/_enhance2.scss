@@ -1,15 +1,52 @@
-.collapsed {
-    overflow: hidden;
-    position: relative;
-    &::after {
-        display: block;
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        background: linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+.enhance2 {
+    .collapsible {
+        overflow: hidden;
     }
-}º
+    .collapsed {
+        position: relative;
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+        }
+        .title,
+        .thumbnail {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .read-more {
+        position: relative;
+        display: block;
+        padding: 0.5em 1.5em;
+        background-color: #eee;
+        color: #666;
+        border-radius: 25em;
+        font-size: 0.5em;
+        font-weight: bold;
+        text-align: center;
+        &:hover {
+            background-color: #666;
+            color: #eee;
+        }
+        @include respond-to("small") {
+            font-size: 0.75em;
+            position: absolute;
+            right: 2em;
+        }
+    }
+    :not(.collapsed) {
+        & + .read-more {
+            display: none;
+        }
+        & + .button {
+            display: none;
+        }
+    }
+}

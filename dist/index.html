@@ -78,7 +78,7 @@
             <section id="about-me" class="inner-wrapper">
                 <h2 class="section-title">About me</h2>
                 <p>I'm a Web Developer based in <a class="inline" target="_blank" href="https://goo.gl/maps/fYa2hb9b8Hw">Manresa</a> (Barcelona), with 5 years of agency experience mostly on brand & product websites, and another 3 years freelancing.</p>
-                <div class="sub-section collapsible read-more" data-collapse-to="2">
+                <div id="background-career" class="sub-section collapsible" data-collapse-to="2">
                     <h3 class="subsection-title">Background</h3>
                     <p>My first approach to computer's world was gaming on a <a class="inline" href="https://en.wikipedia.org/wiki/ZX_Spectrum" target="_blank">ZX Spectrum +2</a> when I was a kid. Wondering myself how that amazing machine worked I first discovered the existence of a thing called <a class="inline" href="https://en.wikipedia.org/wiki/BASIC" target="_blank"><acronym title="Beginner's All-purpose Symbolic Instruction Code">BASIC</acronym></a> and programming languages.</p>
                     <p>I was lucky enough my school offered a course on <em>Introduction to Programming</em> where I learned the basics of control flow statements, data types, boolean comparisons… It was amazing!</p>
@@ -87,22 +87,14 @@
                     <h3 class="subsection-title">Career</h3>
                     <p>My first computer jobs were a System & Network Administration internship at <a class="inline" target="_blank" href="http://gabrmn.uab.es/"><acronym title="Grup d'Aplicacions Biomèdiques de la Ressonància Magnètica Nuclear">GABRMN</acronym></a> and Junior Software Developer at <a class="inline" target="_blank" href="http://www.maprotest.com/">Mapro</a>. Lately I've been working as Web Developer (this is what I really love!) at <a class="inline" target="_blank" href="http://www.havas-se.com/">Havas SE</a> and I'm currently freelancing. Feel free to check my <a class="inline" target="_blank" href="http://stackoverflow.com/story/jordinebot">Developer Story</a> and <a class="inline" target="_blank" href="https://linkedin.com/in/nebotjordi">LinkedIn</a> profile for further details.</p>
                 </div>
+                <button class="read-more" data-target="background-career">Read more about me</button>
             </section>
-            <!--
-            <section id="tldr">
-                <p>If you want more details on my career, please check my <a target="_blank" href="https://linkedin.com/in/nebotjordi">LinkedIn profile</a> and my <a target="_blank" href="http://stackoverflow.com/story/jordinebot">Developer Story</a>. If, for any reason, you need a classic resume I also have an <a download href="http://cv.jordinebot.cat">old school PDF</a> ready to download.</p>
-                <h2>TL;DR</h2>
-                <blockquote>
-                    <p>Booooring... Just show me <a href="">something cool</a>.</p>
-                </blockquote>
-            </section>
-            -->
             <section id="works">
                 <div class="inner-wrapper">
                     <h2 class="section-title">My work</h2>
-                    <p>This is a curated selection of websites and single-page applications I've developed or contributed to, in no particular order.</p>
+                    <p>Below you'll find a curated selection of websites and single-page applications I've developed or contributed to, in no particular order.</p>
                 </div>
-                <ul class="private works">
+                <ul id="private-works" class="extended-wrapper private works collapsible" data-collapse-to="2">
                     <!--
                     <li class="project">
                         <p class="title"><a href="">Urbaning App</a><span class="client">Urbaning</span></p>
@@ -111,9 +103,9 @@
                     </li>
                     -->
                     <li class="project">
-                        <p class="title"><a href="">Nocilla</a><span class="client">Havas SE</span></p>
+                        <p class="title"><a target="_blank" href="http://www.nocilla.es/">Nocilla</a><span class="client">Havas SE</span></p>
                         <a href=""><img src="img/nocilla_1.png" alt="Nocilla Website" class="thumbnail"></a>
-                        <p class="description">Brand & Product website for an spanish well-known hazelnut cocoa spread. Built as a Phalcon PHP MVC Application, uses Volt as view's template engine, CSS and CoffeeScript. CMS is also <em>ad-hoc</em> built using Phalcon PHP with Twitter's Bootstrap.</p>
+                        <p class="description">Brand & Product website for an spanish well-known hazelnut cocoa spread. Built as a Phalcon PHP MVC Application. It uses Volt as view's template engine, CSS and CoffeeScript on the Frontend. CMS is also <em>ad-hoc</em> built using Phalcon PHP with Twitter's Bootstrap.</p>
                     </li>
                     <!--
                     <li class="project">
@@ -130,24 +122,24 @@
                     </li>
                     -->
                     <li class="project">
-                        <p class="title"><a href="">El Born</a><span class="client">Creueta 119</span></p>
-                        <a href=""><img src="img/born_1.png" alt="Screenshot of El Born Centre de Cultura i Memòria's website" class="thumbnail"></a>
+                        <p class="title"><a target="_blank" href="http://elbornculturaimemoria.barcelona.cat/">El Born</a><span class="client">Creueta 119</span></p>
+                        <a target="_blank" href="http://elbornculturaimemoria.barcelona.cat/"><img src="img/born_1.png" alt="Screenshot of El Born Centre de Cultura i Memòria's website" class="thumbnail"></a>
                         <p class="description">Website for Barcelona's <a class="inline" href="https://en.wikipedia.org/wiki/Mercat_del_Born" target="_blank">Mercat del Born</a> that nowadays hosts a museum over <em class="quote" data-source="Wikipedia">the archaeological ruins which were part of the la Ribera district that was demolished in the early eighteenth century after the defeat of Catalonia in the War of Succession in 1714.</em></p>
                     </li>
                     <li class="project">
-                        <p class="title"><a href="">Cola Cao</a><span class="client">Havas SE</span></p>
-                        <a href=""><img src="img/colacao_1.png" alt="Project Thumbnail" class="thumbnail"></a>
+                        <p class="title"><a target="_blank" href="">Cola Cao</a><span class="client">Havas SE</span></p>
+                        <a target="_blank" href=""><img src="img/colacao_1.png" alt="Project Thumbnail" class="thumbnail"></a>
                         <p class="description">Website & CRM integration for this popular spanish chocolate drink. It uses the same Phalcon PHP MVC architecture with Volt template engine and <em>ad-hoc</em> CMS already used in Nocilla's site.</p>
                     </li>
                     <li class="project">
-                        <p class="title"><a href="">Banners, Marketing & Transactional e-mail</a><span class="client">Havas SE</span></p>
-                        <a href=""><img src="img/email_marketing_1.png" alt="Project Thumbnail" class="thumbnail"></a>
-                        <p class="description">During my agency years I coded dozens of welcome e-mails, password recoveries, promotion confirmations... as well as marketing newsletters for multiple brands and also (I know… I was young, I needed the money…) some HTML5 interactive banners.</p>
+                        <p class="title">Banners, Marketing & Transactional e-mail<span class="client">Havas SE</span></p>
+                        <img src="img/email_marketing_1.png" alt="Project Thumbnail" class="thumbnail">
+                        <p class="description">During my agency years I coded dozens of welcome e-mails, password recoveries, promotion confirmations... as well as marketing newsletters for multiple brands and also some HTML5 interactive banners published on Sizmek.</p>
                     </li>
                     <li class="project">
-                        <p class="title"><a href="">La Piara</a><span class="client">Havas SE</span></p>
-                        <a href=""><img src="img/lapiara_1.png" alt="Project Thumbnail" class="thumbnail"></a>
-                        <p class="description">Project Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente explicabo facilis incidunt, reiciendis iste suscipit consequatur tenetur aliquam distinctio, excepturi, repudiandae dicta eum, rerum adipisci ipsum asperiores at delectus. Nobis!</p>
+                        <p class="title"><a target="_blank" href="http://www.lapiara.es/">La Piara</a><span class="client">Havas SE</span></p>
+                        <a target="_blank" href="http://www.lapiara.es/"><img src="img/lapiara_1.png" alt="Project Thumbnail" class="thumbnail"></a>
+                        <p class="description">This is an HTML5/CSS3 static responsive website for an spanish pâté popular brand. It features the brand itself and its products as well as Instagram's live content through a custom built Instagram feed.</p>
                     </li>
                     <!--
                     <li class="project">
@@ -157,7 +149,11 @@
                     </li>
                     -->
                 </ul>
+                <div class="button extended-wrapper">
+                    <button class="read-more" data-target="private-works">View more projects</button>
+                </div>
                 <!--
+                <p>I've also coded some open source stuff...</p>
                 <ul class="public works">
                     <li class="project">
                         <p class="title"><a href="">Project Title</a></p>
@@ -179,7 +175,7 @@
             </section>
             <section id="skills" class="inner-wrapper">
                 <h2 class="section-title">My skills</h2>
-                <p>This is an alphabetically ordered list of technologies I'm confident enough to work with in a professional production environment. I'm not gonna draw some fancy graph here. What on earth does <em>90% HTML</em> even mean?</p>
+                <p>This is an alphabetically ordered list of technologies I'm confident enough to work with in a professional production environment. No need for a fancy graph here. Because what on earth does <em>92% HTML</em> even mean?</p>
                 <ul class="positive skills">
                     <li class="skill">Angular 2</li>
                     <li class="skill">AWS</li>
@@ -202,13 +198,16 @@
                 </ul>
                 <p>On the other side, this is an (obviously) incomplete list of widely used languages and technologies I do not excel at. I know almost nothing of some of them and I could probably work with some others without much effort. Anyway, if you're looking for a ninja in something listed here, honestly, I'm not your guy.</p>
                 <ul class="negative skills">
+                    <li class="skill">ASP.NET</li>
                     <li class="skill">C#</li>
                     <li class="skill">C++</li>
                     <li class="skill">Drupal</li>
+                    <li class="skill">Flash</li>
                     <li class="skill">Go</li>
                     <li class="skill">Java</li>
                     <li class="skill">Joomla</li>
                     <li class="skill">Python</li>
+                    <li class="skill">React</li>
                     <li class="skill">Ruby on Rails</li>
                     <li class="skill">Ruby</li>
                     <li class="skill">Unity3D</li>
@@ -216,17 +215,37 @@
             </section>
             <section id="contact" class="inner-wrapper">
                 <h2 class="section-title">How to contact me</h2>
-                <p>For professional approaches, e-mail is my first choice. So, even if you got my number, please e-mail me at <a class="inline" href="mailto:hola@jordinebot.cat">hola@jordinebot.cat</a>. If needed, you'll find my PGP Public Key as well as verified profiles and domains at <a class="inline" target="_blank" href="https://keybase.io/jordinebot">Keybase.io</a>.</p>
+                <p>For professional approaches, e-mail is my first choice. So, even if you got my number, please e-mail me at <a target="_blank" class="inline" href="mailto:hola@jordinebot.cat">hola@jordinebot.cat</a>. If needed, you'll find my PGP Public Key as well as verified profiles and domains at <a class="inline" target="_blank" href="https://keybase.io/jordinebot">Keybase.io</a>.</p>
                 <p class="centered">
                     <button class="cta" onclick="location.href='mailto:hola@jordinebot.cat'">Contact me</button>
                 </p>
             </section>
-            <section id="faq" class="inner-wrapper">
-                <h2 class="section-title">Some notes & questions</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolor, unde. Laudantium totam sapiente, similique, autem vero vitae doloremque ipsam consequatur blanditiis, eum nobis numquam adipisci molestiae nihil quod, ea.</p>
+            <section id="notes" class="inner-wrapper">
+                <h2 class="section-title">Some notes & faqs</h2>
+                <p>It seems to be true that Cobbler's children have no shoes, and I'm no exception. Even though I tried to build a simple, content-first, <a class="inline" target="_blank" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fjordinebot.cat%2F&tab=mobile">mobile-friendly</a>, responsive, progressive enhanced, <a class="inline" target="_blank" href="https://css-tricks.com/resilience/">resilient</a>, <a class="inline" target="_blank" href="http://www.webbloatscore.com/?url=http%3A%2F%2Fjordinebot.cat%2F">non-bloated</a> website for myself. And… Tadaaaa! You're looking at the result! I hope it's useful to you.</p>
+                <hr>
+                <div id="faqs" class="sub-section collapsible" data-collapse-to="4">
+                    <p class="question">— So, you make webs… I need a web! Could you make me one?</p>
+                    <p>Yes, of course! Just <a target="_blank" class="inline" href="mailto:hola@jordinebot.cat">tell me about your project</a>, let's discuss your requirements, goals and expectations to elaborate the project's brief. I'll contact a trusted designer that fits your needs and I'll get back to you with an estimate quotation and calendar.</p>
+
+                    <p class="question">— I already have my web design but I need a developer to code it. Is this suitable for you?</p>
+                    <p>— Absolutely! That's mostly what I do. Just <a target="_blank" class="inline" href="mailto:hola@jordinebot.cat">get in touch</a> and explain me your project. Adding a couple of screenshots of your design would help me understand it.</p>
+
+                    <p class="question">— What's all this domains, nameservers, hostings… stuff? Could you handle all this technical details for me?</p>
+                    <p>— Sure. I usually work with Dinahosting, MediaTemple, AcuGIS or Amazon Web Services depending on the project requirements. If you want to, I'll prepare a budget for all this stuff on the project estimate.</p>
+
+                    <p class="question">— I've seen a terrific Wordpress theme on ThemeForest, StudioPress… If I buy it, could you make me a good-looking cheap web/e-commerce?</p>
+                    <p>—Short answer: No.</p>
+                    <p>Long answer: <em>It depends</em>. As a general rule I don't work with third-party themes. Why? First of all, if you've only seen the <em>Live Preview/Demo</em> for this theme, you've just seen a list of features but you don't have an actual design for your site. And, trust me, that's not a good starting point for a project. Also, in my experience, generic premium themes with tons of cool features tend to be utterly bloated with frameworks, libraries, plug-ins… which could lead to unnecessary dependencies, vulnerabilities, bad performance, long-term incompatibilities, etc.</p>
+                    <p>Anyway, if –and only if– you really have a clear idea of a sitemap and you've designed your web/store based on a premium template you already bought, please explain me your project</p>
+
+                    <p class="question">— I need someone to update and maintain my website. What about you?</p>
+                </div>
+                <button class="read-more" data-target="faqs">Explore more questions</button>
             </section>
         </main>
         <footer id="main-footer">
+            <p class="footer-info"><strong>Last updated:</strong> Wed Dec 21 2016 11:43:06 GMT+0100 (CET)</p>
             <ul class="social-links">
                 <li class="link-item">
                     <a target="_blank" href="https://github.com/jordinebot"><span class="icon icon-github">GitHub</span></a>
@@ -243,16 +262,6 @@
             </ul>
         </footer>
     </div>
-    <!--
-    <div class="progressive-enhancement">
-        <ol class="enhancement-levels">
-            <li class="level">None</li>
-            <li class="level">Basic</li>
-            <li class="level">Intermediate</li>
-            <li class="level">Full</li>
-        </ol>
-    </div>
-    -->
     <script type="text/javascript" charset="utf-8">
         /* Credit: http://stackoverflow.com/a/22255132/1534704 */
         function loadStyleSheet(src) {
@@ -271,15 +280,53 @@
         loadStyleSheet('css/style.css');
     </script>
     <script type="text/javascript" charset="utf-8">
-        document.querySelectorAll('.collapsible').forEach(function(node) {
-            node.classList.add('collapsed');
-            var children = node.children;
-            var consider = node.dataset.collapseTo;
-            var height = 0;
-            for (var i = 0; i < Math.min(children.length, consider); i++) {
-                height += (children[i].offsetHeight + 40);
+        var live = false;
+        var body = document.getElementsByTagName('body');
+
+        body[0].classList.add('enhance2');
+
+        function init() {
+            if (live || (body.length && body[0].className.indexOf('enhance2') === -1)) {
+                return;
             }
-            node.style.height = height + 'px';
+
+            live = true;
+            clearTimeout(autoInit);
+
+            document.querySelectorAll('.collapsible').forEach(function(node) {
+                var children = node.children,
+                    consider = node.dataset.collapseTo,
+                    reference = null,
+                    height = 100;
+                if (typeof node.children[consider - 1] !== 'undefined') {
+                    reference = node.children[consider - 1];
+                    height = (reference.offsetTop - node.offsetTop) + reference.offsetHeight;
+                }
+                node.style.height = height + 'px';
+                node.classList.add('collapsed');
+            });
+
+            document.querySelectorAll('.read-more').forEach(function(node) {
+                node.addEventListener('click', function(event) {
+                    var target = document.getElementById(event.currentTarget.dataset.target);
+                    if (typeof target !== 'undefined') {
+                        target.classList.remove('collapsed');
+                        target.style = 'auto';
+                    }
+                });
+            });
+        }
+
+        var loaded = 0,
+            assets = document.querySelectorAll('img, link'),
+            autoInit = setTimeout(init, 2000);
+
+        assets.forEach(function(asset, index) {
+            asset.addEventListener('load', function(event) {
+                if (loaded++ >= assets.length - 1) {
+                    init();
+                }
+            });
         });
     </script>
     <noscript>
