@@ -20,11 +20,26 @@
             position: relative;
             z-index: 2;
         }
+        &.works {
+            .project {
+                @include respond-to("small") {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+            & + .button {
+                position: relative;
+                top: -3em;
+                z-index: 2;
+            }
+        }
     }
     .read-more {
         position: relative;
         display: block;
         padding: 0.5em 1.5em;
+        margin-top: 1em;
         background-color: #eee;
         color: #666;
         border-radius: 25em;
