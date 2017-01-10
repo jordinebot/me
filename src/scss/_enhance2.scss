@@ -26,6 +26,15 @@
                     &::after {
                         display: none;
                     }
+                    &:first-child {
+                        &::after {
+                            display: block;
+                            content: "* * *";
+                            text-align: center;
+                            font-family: monospace;
+                            margin-top: 2em;
+                        }
+                    }
                 }
             }
             & + .button {
