@@ -143,19 +143,19 @@
                     </li>
                     <li class="project">
                         <p class="title">
-                            Banners, Marketing & Transactional e-mail
-                            <span class="client">Agency: Havas SE</span>
-                        </p>
-                        <img src="img/email_marketing_1.png" alt="Screenshot of some newsletters" class="thumbnail">
-                        <p class="description">During my agency years I coded dozens of welcome e-mails, password recoveries, promotion confirmations... as well as marketing newsletters for multiple brands and also some HTML5 interactive banners published on Sizmek.</p>
-                    </li>
-                    <li class="project">
-                        <p class="title">
                             <a target="_blank" href="http://www.lapiara.es/">La Piara</a>
                             <span class="client">Agency: Havas SE</span>
                         </p>
                         <a target="_blank" href="http://www.lapiara.es/"><img src="img/lapiara_1.png" alt="Screenshot of La Piara's website" class="thumbnail"></a>
                         <p class="description">This is an HTML5/CSS3 static responsive website for an spanish pâté popular brand. It features the brand itself and its products as well as Instagram's live content through a custom built Instagram feed.</p>
+                    </li>
+                    <li class="project">
+                        <p class="title">
+                            Banners, Marketing & Transactional e-mail
+                            <span class="client">Agency: Havas SE</span>
+                        </p>
+                        <img src="img/email_marketing_1.png" alt="Screenshot of some newsletters" class="thumbnail">
+                        <p class="description">During my agency years I coded dozens of welcome e-mails, password recoveries, promotion confirmations... as well as marketing newsletters for multiple brands and also some HTML5 interactive banners published on Sizmek.</p>
                     </li>
                     <!--
                     <li class="project">
@@ -187,6 +187,7 @@
                     <li class="skill">MySQL</li>
                     <li class="skill">Node.js</li>
                     <li class="skill">Open Layers 3</li>
+                    <li class="skill">Phalcon</li>
                     <li class="skill">PHP</li>
                     <li class="skill">PostGIS</li>
                     <li class="skill">TypeScript</li>
@@ -283,7 +284,7 @@
                     </a>
                 </li>
             </ul>
-            <p class="footer-info"><strong>Content updated:</strong> Tue, 10 Jan 2017 10:15:33 +0100 CET</p>
+            <p class="footer-info"><strong>Content updated:</strong> Wed, 11 Jan 2017 18:39:28 +0100 CET</p>
         </footer>
     </div>
     <script type="text/javascript" charset="utf-8">
@@ -356,6 +357,12 @@
                 }
             });
         });
+
+        // Shuffle works
+        var works = document.querySelector('.works');
+        for (var i = works.children.length - 1; i >= 0; i--) {
+            works.appendChild(works.children[Math.random() * i | 0]);
+        }
     </script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
