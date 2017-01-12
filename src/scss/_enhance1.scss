@@ -99,14 +99,17 @@
 
     .works {
         @include reset-list;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        @supports (display: flex) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
         .project {
             box-sizing: border-box;
             padding: 1em;
             margin: 1em 0;
             width: 50%;
+            float: left;
             @include respond-to("small") {
                 width: 100%;
                 &::after {
@@ -122,8 +125,8 @@
                     }
                 }
             }
-            @supports not (display: flex) {
-                float: left;
+            @supports (display: flex) {
+                float: none;
             }
         }
         .title {
