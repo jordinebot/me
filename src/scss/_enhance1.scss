@@ -99,11 +99,16 @@
 
     .works {
         @include reset-list;
-        @include clearfix;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         .project {
+            box-sizing: border-box;
             padding: 1em;
             margin: 1em 0;
+            width: 50%;
             @include respond-to("small") {
+                width: 100%;
                 &::after {
                     display: block;
                     content: "* * *";
@@ -117,9 +122,7 @@
                     }
                 }
             }
-            @include respond-to("medium" "large" "huge") {
-                box-sizing: border-box;
-                width: 50%;
+            @supports not (display: flex) {
                 float: left;
             }
         }
