@@ -3,15 +3,24 @@ var autoprefixer = require('gulp-autoprefixer');
 var browserSync  = require('browser-sync');
 var notify       = require('gulp-notify');
 var plumber      = require('gulp-plumber');
+var rename       = require('gulp-rename');
 var sass         = require('gulp-sass');
 
 var styleSources = ['src/scss/**/*.scss'];
 var layout = ['dist/**/*.html']
 
 gulp.task('styles', function() {
+
+    gulp.src(styleSources)
+        .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(autoprefixer('last 2 versions'))
+        .pipe(rename(function (path) { path.extname = ".min.css" }))
+        .pipe(gulp.dest('dist/css'))
+
     return gulp.src(styleSources)
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'expanded'}))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.stream());
