@@ -12,6 +12,7 @@
   ExpiresByType image/x-icon A2592000
   ExpiresByType text/css A31536000
   ExpiresByType text/javascript A31536000
+  ExpiresByType application/javascript A31536000
   ExpiresByType application/x-shockwave-flash A2592000
 
   <FilesMatch "\.(gif¦jpe?g¦png¦ico¦css¦js)$">
