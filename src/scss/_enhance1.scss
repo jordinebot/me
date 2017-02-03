@@ -107,7 +107,6 @@
         .project {
             box-sizing: border-box;
             padding: 1em;
-            margin: 1em 0;
             width: 50%;
             float: left;
             @include respond-to("small") {
@@ -134,7 +133,7 @@
             }
         }
         .title {
-            font-size: 1.25em;
+            font-size: 1.35em;
             font-weight: bold;
             text-align: center;
             a {
@@ -216,6 +215,14 @@
     .question {
         font-family: 'Gentium Basic', serif;
         font-weight: bold;
+        font-size: 1.25em;
+        line-height: 1.25;
         margin-top: 2em;
+        @include respond-to("small") {
+            font-size: 1.15em;
+        }
+        & + .question {
+            margin-top: 0;
+        }
     }
 }

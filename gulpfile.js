@@ -17,6 +17,7 @@ gulp.task('styles', function() {
         .pipe(autoprefixer('last 2 versions'))
         .pipe(rename(function (path) { path.extname = ".min.css" }))
         .pipe(gulp.dest('dist/css'))
+        .pipe(browserSync.stream());
 
     return gulp.src(styleSources)
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
