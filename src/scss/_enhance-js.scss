@@ -1,4 +1,4 @@
-.enhance2 {
+.enhance-js {
     .collapsible {
         overflow: hidden;
     }
@@ -81,7 +81,7 @@
     }
 }
 
-body:not(.enhance2) {
+body:not(.enhance-js) {
     .read-more {
         display: none;
     }
