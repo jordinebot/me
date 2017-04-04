@@ -303,7 +303,7 @@
             }
         }
         loadStyleSheet('https://fonts.googleapis.com/css?family=Gentium+Basic%7CHeebo:300,700');
-        loadStyleSheet('css/style.min.css?v=1.0.1');
+        loadStyleSheet('css/style.min.css?v=1.0.2');
     </script>
     <script type="text/javascript">
         var live = false,
@@ -315,7 +315,7 @@
 
             clearTimeout(autoInit);
 
-            if (live || document.styleSheets.length <= 1 || (body.length && body[0].className.indexOf('enhance2') === -1)) {
+            if (live || document.styleSheets.length <= 1 || (body.length && body[0].className.indexOf('enhance-js') === -1)) {
                 return;
             }
             live = true;
