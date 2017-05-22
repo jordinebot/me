@@ -33,9 +33,19 @@
         #main-header .description {
             font-size: 1.5em;
         }
-        @media only screen and (max-device-width: 800px) {
+        @media only screen and (max-device-width: 600px) {
             body {
                 font-size: 100%;
+            }
+            li > a {
+                display: inline-block;
+                padding: 0.45em 0;
+            }
+        }
+        @media only screen and (min-device-width: 601px) and (max-device-width: 800px) {
+            body {
+                margin: 2em;
+                font-size: 125%;
             }
             li > a {
                 display: inline-block;
@@ -83,10 +93,15 @@
                     <h3 class="subsection-title">Background</h3>
                     <p>My first approach to computer's world was gaming on a <a class="inline" href="https://en.wikipedia.org/wiki/ZX_Spectrum" target="_blank">ZX Spectrum +2</a> when I was a kid. Wondering myself how that amazing machine worked I first discovered the existence of <a class="inline" href="https://en.wikipedia.org/wiki/BASIC" target="_blank"><abbr title="Beginner's All-purpose Symbolic Instruction Code">BASIC</abbr></a> and programming languages.</p>
                     <p>I was lucky enough my school offered an <em>Introduction to Programming</em> where I learned the basics of control flow statements, data types, boolean comparisons… It was amazing!</p>
-                    <p>Later, in High School, I discovered the Internet: IRC, Telnet <a class="inline" target="_blank" href="https://en.wikipedia.org/wiki/MUD"><abbr title="Multi-User Dungeon">MUD</abbr></a>'s, ICQ… but also GNU/Linux, free software, HTML, basic Javascript and I started learning how the World Wide Web was being built.</p>
+                    <p>Later, in High School, I discovered the Internet: IRC, Telnet, ICQ… but also GNU/Linux, free software, HTML, basic Javascript and I started learning how the World Wide Web was being built.</p>
                     <p>The next logical step was to study Computer Engineering, so I did it at <a class="inline" href="http://www.uab.cat/en/"><abbr title="Universitat Autònoma de Barcelona">UAB</abbr></a>. Those were very intense years of deep learning and growing and for this I'm so glad I took that decision.</p>
                     <h3 class="subsection-title">Career</h3>
                     <p>My first computer jobs were a System & Network Administration internship at <a class="inline" target="_blank" href="http://gabrmn.uab.es/"><abbr title="Grup d'Aplicacions Biomèdiques de la Ressonància Magnètica Nuclear">GABRMN</abbr></a> and Junior Software Developer at <a class="inline" target="_blank" href="http://www.maprotest.com/">Mapro</a>. Lately I've been working as Web Developer (this is what I really love!) at <a class="inline" target="_blank" href="http://www.havas-se.com/">Havas SE</a> and I'm currently freelancing. Feel free to check my <a class="inline" target="_blank" href="http://stackoverflow.com/story/jordinebot">Developer Story</a> and <a class="inline" target="_blank" href="https://linkedin.com/in/nebotjordi">LinkedIn</a> profile for further details.</p>
+                    <h3 class="subsection-title">Inspiring Quotes</h3>
+                    <blockquote>
+                        Give me six hours to chop down a tree and I will spend the first four sharpening the axe.
+                        <small class="author">Abraham Lincoln</small>
+                    </blockquote>
                 </div>
                 <button class="read-more" data-target="background-career">Read more about me</button>
             </section>
@@ -144,6 +159,16 @@
                             <img src="img/lapiara_1.sm.png" alt="La Piara's website" class="thumbnail">
                         </a>
                         <p class="description">This is an HTML5/CSS3 static responsive website for an spanish pâté popular brand. It features the brand itself and its products as well as Instagram's live content through a custom built Instagram feed.</p>
+                    </li>
+                    <li class="project">
+                        <p class="title">
+                            <a target="_blank" href="http://www.norit.es/">Norit</a>
+                            <span class="client">Agency: Havas SE</span>
+                        </p>
+                        <a target="_blank" href="http://www.norit.es/">
+                            <img src="img/norit_1.sm.png" alt="Norit's website" class="thumbnail">
+                        </a>
+                        <p class="description">Website for this spanish trusted laundry detergent brand. This is a second version of a Wordpress Theme I already built with special focus on implementing SEO policies (the SEO auditory was provided by an external consultant).</p>
                     </li>
                     <li class="project">
                         <p class="title">
@@ -285,7 +310,7 @@
                     </a>
                 </li>
             </ul>
-            <p class="footer-info"><strong>Content updated:</strong> Tue, 04 Apr 2017 13:10:00 +0200 CEST</p>
+            <p class="footer-info"><strong>Content updated:</strong> Mon, 22 May 2017 10:06:32 +0200 CEST</p>
         </footer>
     </div>
     <script type="text/javascript">

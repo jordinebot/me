@@ -6,3 +6,18 @@ button {
     border: 0;
     outline: 0;
 }
+
+abbr {
+    text-decoration: none;
+}
+
+blockquote {
+    font-family: serif;
+    font-style: italic;
+    .author {
+        display: block;
+        &::before {
+            content: "—";
+        }
+    }
+}
