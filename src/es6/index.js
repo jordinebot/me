@@ -1,4 +1,4 @@
-import loadStyleSheet from './styles.js';
+import { loadStyleSheet } from './styles.js';
 import { Navigation } from './navigation.class.js';
 
 const DOM = {
@@ -12,9 +12,15 @@ const styles = [
     'css/styles.css',
 ];
 
-styles.map(s => loadStyleSheet(s));
-DOM.body.classList.remove('loading-styles'); // TODO: Add an event to detect CSS loaded
+styles.map(s => loadStyleSheet(s, styles.length, init));
 
-/* Navigation Hover Effect */
-const nav = new Navigation(DOM.nav);
+function init() {
+    console.log('Called');
+    DOM.body.classList.remove('loading-styles'); // TODO: Add an event to detect CSS loaded
+
+    /* Navigation Hover Effect */
+    const nav = new Navigation(DOM.nav);
+}
+
+
 
