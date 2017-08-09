@@ -1,0 +1,36 @@
+#main_header {
+    padding: 1rem;
+    text-align: center;
+}
+
+#main_navigation {
+    display: inline-block;
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    .hover {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 0rem;
+        height: 3px;
+        background: $pink;
+        left: -3rem;
+        transition: all 200ms;
+    }
+}
+
+.main-menu {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline;
+    margin: 0 0.5rem;
+    a {
+        &:hover {
+            color: $pink;
+        }
+    }
+}
