@@ -11,10 +11,7 @@
         width: 100%;
         max-width: 640px;
         display: inline;
-        @include responsive-property('font-size', 2vw, 28px);
-        @include respond-to(small) {
-            text-align: center;
-        }
+        font-size: calc(28px + 1vw);
         background: linear-gradient(to bottom, transparent 0%, transparent 18%, white 18%, white 82%, transparent 82%, transparent 100%);
     }
     background-color: $pink;
@@ -31,5 +28,5 @@
     justify-content: flex-start;
     align-items: center;
     flex: 1 1 50%;
-    @include responsive-property('font-size', 1.2vw, 20px);
+    font-size: calc(18px + 0.5vw);
 }

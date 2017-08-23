@@ -53,5 +53,5 @@ p {
 }
 
 .box {
-    @include responsive-property('padding', 1.5vw, 32px);
+    padding: calc(20px + 1vw);
 }
