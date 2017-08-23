@@ -2,14 +2,56 @@
     margin: 0;
     border: 0;
     padding: 0;
+	box-sizing: border-box;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+    p > & {
+        transition: background 200ms;
+        background: linear-gradient(to bottom, transparent 0%, transparent 60%, $green 60%, $green 100%);
+    }
+
+    p > &:hover {
+        background-color: $green;
+    }
 }
 
 body {
     opacity: 1;
     transition: opacity 4000ms;
+}
+
+main {
+    max-width: $site-width;
+    margin: 0 auto;
+}
+
+::selection {
+    background: $pink;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-family: 'et-book', georgia, serif;
+
+    & + & {
+        margin-top: 0.5rem;
+    }
+}
+
+.flex {
+    display: flex;
+    @include respond-to(small) {
+        flex-direction: column;
+    }
+}
+
+.box {
+    @include responsive-property('padding', 1.5vw, 32px);
 }

@@ -1,4 +1,4 @@
-import { loadStyleSheet } from './styles.js';
+import { StylesLoader } from './styles.class.js';
 import { Navigation } from './navigation.class.js';
 
 const DOM = {
@@ -8,19 +8,14 @@ const DOM = {
 };
 
 const styles = [
-    'https://fonts.googleapis.com/css?family=Inconsolata',
+    'https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:400,700',
     'css/styles.css',
 ];
 
-styles.map(s => loadStyleSheet(s, styles.length, init));
+const stylesLoader = new StylesLoader(styles, init);
 
 function init() {
-    console.log('Called');
-    DOM.body.classList.remove('loading-styles'); // TODO: Add an event to detect CSS loaded
-
     /* Navigation Hover Effect */
     const nav = new Navigation(DOM.nav);
 }
-
-
 

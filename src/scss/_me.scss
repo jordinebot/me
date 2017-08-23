@@ -1,0 +1,35 @@
+.abstract {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .title {
+        text-align: right;
+		padding: 40px 0 40px;
+    }
+    h1 {
+        color: $blue;
+        width: 100%;
+        max-width: 640px;
+        display: inline;
+        @include responsive-property('font-size', 2vw, 28px);
+        @include respond-to(small) {
+            text-align: center;
+        }
+        background: linear-gradient(to bottom, transparent 0%, transparent 18%, white 18%, white 82%, transparent 82%, transparent 100%);
+    }
+    background-color: $pink;
+    background-image: url(../img/avatar.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-blend-mode: multiply;
+    flex: 1 1 50%;
+}
+
+.long-story {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 50%;
+    @include responsive-property('font-size', 1.2vw, 20px);
+}

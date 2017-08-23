@@ -1,6 +1,7 @@
 #main_header {
-    padding: 1rem;
+    margin: 3rem 0.25rem;
     text-align: center;
+    background-color: white;
 }
 
 #main_navigation {
@@ -26,8 +27,14 @@
 }
 
 .menu-item {
-    display: inline;
-    margin: 0 0.5rem;
+    display: inline-block;
+    margin: 0.25rem 0.75rem 0;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
     a {
         &:hover {
             color: $pink;

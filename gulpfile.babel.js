@@ -84,7 +84,7 @@ gulp.task('scripts:transpile', () => {
                     presets : [['es2015', { 'modules': false }]],
                     plugins : ['external-helpers'],
                     babelrc : false
-                })
+                }),
             ],
             entry: routes.scripts.entry
         }))
