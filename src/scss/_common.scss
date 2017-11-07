@@ -2,7 +2,7 @@
     margin: 0;
     border: 0;
     padding: 0;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a {
@@ -16,6 +16,36 @@ a {
     p > &:hover {
         background-color: $green;
     }
+
+    &.button {
+        $border: 3px;
+        $disalign: 0.25rem;
+        display: inline-block;
+        font-family: inconsolata;
+        padding: 5px 30px;
+        border: $border solid $pink;
+        color: $pink;
+        position: relative;
+        margin: 2rem auto;
+        transition: all 100ms;
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            z-index: -1;
+            background: $green;
+            width: calc(100% + #{$disalign} + #{$border / 2});
+            height: calc(100% + #{$disalign} + #{$border / 2});
+            top: $disalign;
+            left: $disalign;
+        }
+        &:active {
+            transform: translateX($disalign) translateY($disalign);
+            &::after {
+                transform: translateX(-$disalign) translateY(-$disalign);
+            }
+        }
+    }
 }
 
 body {
@@ -26,6 +56,13 @@ body {
 main {
     max-width: $site-width;
     margin: 0 auto;
+}
+
+section {
+    padding: 0 calc(12px + 2vw);
+    & + & {
+        padding-top: calc(24px + 4vw);
+    }
 }
 
 ::selection {
@@ -39,9 +76,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: 'et-book', georgia, serif;
+    font-size: calc(18px + 0.5vw);
 
     & + & {
-        margin-top: 0.5rem;
+        margin-top: calc(10px + 0.75vw);
     }
 }
 
@@ -50,6 +88,10 @@ p {
     @include respond-to(small) {
         flex-direction: column;
     }
+}
+
+.grid {
+    display: grid;
 }
 
 .box {

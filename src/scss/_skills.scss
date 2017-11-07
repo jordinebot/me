@@ -1,0 +1,38 @@
+h1 {
+    font-size: calc(22px + 0.75vw);
+    margin-bottom: 1vw;
+    color: $blue;
+}
+
+#skills-list {
+    width: 100%;
+    min-height: 50vh;
+    grid-template-columns: repeat(8, (100vmin / 8));
+    grid-template-rows: repeat(8, (100vmin / 8));
+    dd {
+        justify-content: flex-start;
+        align-items: flex-start;
+        grid-area: 1 / 1 / 3 / 5;
+    }
+
+    dt {
+        &.skill {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: calc(20px + 1vw);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    }
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+}
+
+.css { background-color: $css; }
+.html { background-color: $html; }
+.js { background-color: $js; }
+.php { background-color: $php; }
