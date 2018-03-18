@@ -1,0 +1,7 @@
+#background {
+    p {
+        &:first-child {
+            font-size: calc(1.2em + 0.8vw);
+        }
+    }
+}

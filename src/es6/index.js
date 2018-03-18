@@ -8,7 +8,7 @@ const DOM = {
 };
 
 const styles = [
-    'https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:400,700',
+    'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
     'css/styles.css',
 ];
 

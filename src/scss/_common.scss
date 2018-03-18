@@ -8,6 +8,7 @@
 a {
     color: inherit;
     text-decoration: none;
+    span > &,
     p > & {
         transition: background 200ms;
         background: linear-gradient(
@@ -19,6 +20,7 @@ a {
         );
     }
 
+    span > &:hover,
     p > &:hover {
         background-color: $green;
     }
@@ -79,24 +81,16 @@ h6 {
 }
 
 h1 {
-    font-size: calc(22px + 0.75vw);
+    font-size: calc(1.6em + 0.75vw);
     color: $blue;
 }
 
 p {
     font-family: 'et-book', georgia, serif;
-    font-size: calc(18px + 0.5vw);
-
-    h1 + &:not(.headline) {
-        margin-top: 1vw;
-    }
+    font-size: calc(0.8em + 0.5vw);
 
     & + & {
-        margin-top: calc(10px + 0.75vw);
-    }
-    &.headline {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: bold;
+        margin-top: calc(0.8em + 0.75vw);
     }
 }
 
