@@ -10,7 +10,13 @@ a {
     text-decoration: none;
     p > & {
         transition: background 200ms;
-        background: linear-gradient(to bottom, transparent 0%, transparent 60%, $green 60%, $green 100%);
+        background: linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 60%,
+            $green 60%,
+            $green 100%
+        );
     }
 
     p > &:hover {
@@ -31,7 +37,7 @@ a {
         &::after {
             display: block;
             position: absolute;
-            content: "";
+            content: '';
             z-index: -1;
             background: $green;
             width: calc(100% + #{$disalign} + #{$border / 2});
@@ -58,25 +64,39 @@ main {
     margin: 0 auto;
 }
 
-section {
-
-}
-
 ::selection {
     background: $pink;
     color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-size: calc(22px + 0.75vw);
+    color: $blue;
 }
 
 p {
     font-family: 'et-book', georgia, serif;
     font-size: calc(18px + 0.5vw);
 
+    h1 + &:not(.headline) {
+        margin-top: 1vw;
+    }
+
     & + & {
         margin-top: calc(10px + 0.75vw);
+    }
+    &.headline {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
     }
 }
 
@@ -89,4 +109,10 @@ p {
 
 .grid {
     display: grid;
+}
+
+section {
+    section + & {
+        margin-top: 2em;
+    }
 }

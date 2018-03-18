@@ -1,21 +1,20 @@
 #main_header {
-    grid-column: 1 / -1;
-    margin: 3rem 0.25rem;
-    background-color: white;
-    justify-self: center;
-    align-self: center;
+    text-align: right;
+    margin-bottom: 3em;
 }
 
 #main_navigation {
     display: inline-block;
     position: relative;
     font-family: 'Inconsolata', monospace;
+    font-size: 0.8em;
+    color: #ccc;
     .hover {
         position: absolute;
         display: block;
         content: '';
         width: 0rem;
-        height: 3px;
+        height: 2px;
         background: $pink;
         left: -3rem;
         transition: all 200ms;
