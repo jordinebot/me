@@ -1,7 +1,9 @@
 #main_header {
+    grid-column: 1 / -1;
     margin: 3rem 0.25rem;
-    text-align: center;
     background-color: white;
+    justify-self: center;
+    align-self: center;
 }
 
 #main_navigation {
@@ -11,7 +13,7 @@
     .hover {
         position: absolute;
         display: block;
-        content: "";
+        content: '';
         width: 0rem;
         height: 3px;
         background: $pink;

@@ -9,6 +9,7 @@ h1 {
     min-height: 50vh;
     grid-template-columns: repeat(8, (100vmin / 8));
     grid-template-rows: repeat(8, (100vmin / 8));
+    grid-gap: 20px;
     dd {
         justify-content: flex-start;
         align-items: flex-start;

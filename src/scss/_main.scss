@@ -1,0 +1,5 @@
+#main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 80px 1fr fit-content(100%) auto;
+}

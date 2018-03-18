@@ -59,10 +59,7 @@ main {
 }
 
 section {
-    padding: 0 calc(12px + 2vw);
-    & + & {
-        padding-top: calc(24px + 4vw);
-    }
+
 }
 
 ::selection {
@@ -92,8 +89,4 @@ p {
 
 .grid {
     display: grid;
-}
-
-.box {
-    padding: calc(20px + 1vw);
 }
