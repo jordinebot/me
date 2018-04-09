@@ -14,6 +14,15 @@ footer {
         svg {
             width: 16px;
             color: $pink;
+            &:hover {
+                animation: psychedelia 200ms infinite;
+            }
         }
     }
+}
+
+@keyframes psychedelia {
+    0% { color: $green }
+    50% { color: $pink }
+    100% { color: $blue }
 }
