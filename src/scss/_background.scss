@@ -2,6 +2,7 @@
     p {
         &:first-child {
             font-size: calc(1.2em + 0.8vw);
+            line-height: 1.25;
         }
     }
 }
