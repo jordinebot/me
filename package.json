@@ -1,6 +1,7 @@
 {
   "name": "me",
-  "version": "1.0.1",
+  "version": "3.0.0",
+  "title": "Me",
   "description": "My website",
   "main": "index.js",
   "scripts": {
@@ -10,19 +11,42 @@
     "type": "git",
     "url": "git+https://github.com/jordinebot/me.git"
   },
-  "author": "Jordi Nebot",
+  "author": {
+    "name": "Jordi Nebot",
+    "email": "hola@jordinebot.cat"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jordinebot/me/issues"
   },
   "homepage": "https://github.com/jordinebot/me#readme",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
   "devDependencies": {
-    "browser-sync": "^2.18.2",
+    "babel-core": "^6.23.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "del": "^3.0.0",
+    "glob": "^7.1.1",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-notify": "^2.2.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-bump": "^2.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-environments": "^0.1.1",
+    "gulp-header": "^1.8.8",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-newer": "^1.3.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2"
-  }
+    "gulp-rollup": "^2.11.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "rollup-plugin-babel": "^2.7.1"
+  },
+  "dependencies": {}
 }

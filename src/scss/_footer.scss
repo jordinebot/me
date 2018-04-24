@@ -1,0 +1,28 @@
+footer {
+    background: $yellow;
+    text-align: center;
+    margin: 4em auto;
+    .social-media {
+        margin: 0 auto;
+        max-width: 320px;
+        display: flex;
+        justify-content: space-around;
+        padding: 3em 0 2em 0;
+    }
+    .social-icon {
+        display: inline-block;
+        svg {
+            width: 16px;
+            color: $pink;
+            &:hover {
+                animation: psychedelia 200ms infinite;
+            }
+        }
+    }
+}
+
+@keyframes psychedelia {
+    0% { color: $green }
+    50% { color: $pink }
+    100% { color: $blue }
+}

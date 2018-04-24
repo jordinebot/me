@@ -1,0 +1,44 @@
+#main_header {
+    text-align: right;
+    margin-bottom: 3em;
+}
+
+#main_navigation {
+    display: inline-block;
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.8em;
+    color: #ccc;
+    .hover {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 0rem;
+        height: 2px;
+        background: $pink;
+        left: -3rem;
+        transition: all 200ms;
+    }
+}
+
+.main-menu {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0.25rem 0.75rem 0;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    a {
+        &:hover {
+            color: $pink;
+        }
+    }
+}
