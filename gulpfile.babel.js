@@ -9,6 +9,7 @@ import environments from 'gulp-environments';
 import glob         from 'glob';
 import gulp         from 'gulp';
 import header       from 'gulp-header';
+import htmlmin      from 'gulp-htmlmin';
 import newer        from 'gulp-newer';
 import plumber      from 'gulp-plumber';
 import rollup       from 'gulp-rollup';
@@ -43,8 +44,13 @@ const routes = {
         dest  : `${base.dest}/css/`
     },
     templates: {
-        watch : `${base.src}/templates/**/*`,
-        src   : `${base.src}/templates/**/*`,
+        watch : `${base.src}/statics/**/*`,
+        src   : `${base.src}/statics/**/*`,
+        dest  : `${base.dest}/`,
+    },
+    statics: {
+        watch : `${base.src}/statics/**/*`,
+        src   : `${base.src}/statics`,
         dest  : `${base.dest}/`,
     },
     vendor: {
@@ -57,10 +63,16 @@ gulp.task('clean', () => {
     return del(base.dest);
 });
 
-gulp.task('templates', () => {
-    return gulp.src(routes.templates.src)
-        .pipe(newer(routes.templates.dest))
-        .pipe(gulp.dest(routes.templates.dest));
+gulp.task('statics', () => {
+
+    gulp.src(`${routes.statics.src}/**/*.html`)
+        .pipe(production(htmlmin({collapseWhitespace: true})))
+        .pipe(newer(routes.statics.dest))
+        .pipe(gulp.dest(routes.statics.dest));
+
+    return gulp.src([`${routes.statics.src}/**/*`, `!${routes.statics.src}/**/*.html`])
+        .pipe(newer(routes.statics.dest))
+        .pipe(gulp.dest(routes.statics.dest));
 });
 
 gulp.task('styles:transpile', () => {
@@ -94,14 +106,14 @@ gulp.task('scripts:transpile', () => {
 });
 
 gulp.task('build', ['clean'], () => {
-    gulp.start('templates');
+    gulp.start('statics');
     gulp.start('styles:transpile');
     gulp.start('scripts:transpile');
     // gulp.start('vendor');
 });
 
 gulp.task('develop', ['build'], () => {
-    gulp.watch(routes.templates.watch, ['templates']);
+    gulp.watch(routes.statics.watch, ['statics']);
     gulp.watch(routes.styles.watch, ['styles:transpile']);
     gulp.watch(routes.scripts.watch, ['scripts:transpile']);
 });
