@@ -88,11 +88,11 @@ h1 {
 
 p {
     font-family: georgia, serif;
-    font-size: calc(0.8em + 0.5vw);
+    font-size: calc(1em + 0.5vw);
     line-height: 1.5;
 
     & + & {
-        margin-top: calc(0.8em + 0.75vw);
+        margin-top: calc(1em + 0.75vw);
     }
 }
 
