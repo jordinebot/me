@@ -4,15 +4,15 @@ footer {
     margin: 4em auto;
     .social-media {
         margin: 0 auto;
-        max-width: 320px;
+        width: 100%;
+        max-width: 640px;
         display: flex;
         justify-content: space-around;
         padding: 3em 0 2em 0;
     }
     .social-icon {
-        display: inline-block;
         svg {
-            width: 16px;
+            width: calc(14px + 1vw);
             color: $pink;
             &:hover {
                 animation: psychedelia 200ms infinite;
