@@ -1,16 +1,21 @@
 footer {
-    background: $yellow;
     text-align: center;
-    margin: 4em auto;
+    margin: 0 auto;
     .social-media {
-        margin: 0 auto;
         width: 100%;
-        max-width: 640px;
         display: flex;
-        justify-content: space-around;
-        padding: 3em 0 2em 0;
+        justify-content: flex-start;
+        padding: 3em 0;
     }
     .social-icon {
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.stack-overflow {
+            position: relative;
+            top: -5px;
+        }
         svg {
             width: calc(14px + 1vw);
             color: $pink;
