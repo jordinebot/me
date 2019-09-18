@@ -17,8 +17,8 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@master
-      - uses: jakejarvis/firebase-deploy-action@master
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+    steps:
+    - uses: actions/checkout@master
+    - uses: jakejarvis/firebase-deploy-action@maste
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
