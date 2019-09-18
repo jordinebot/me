@@ -4,7 +4,7 @@ on:
     branches:
     - master
 jobs:
-  release:
+  Deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -12,8 +12,8 @@ jobs:
       run: yarn install
     - name: Build
       run: yarn build
-    - name: Deploy
       uses: w9jds/firebase-action@master
+    - name: Deploy
       if: success()
       with:
         args: deploy --only hosting
