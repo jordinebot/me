@@ -4,7 +4,7 @@ on:
     branches:
     - master
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -12,11 +12,11 @@ jobs:
       run: yarn install
     - name: Build
       run: yarn build
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: Setup Firebase
-      run: npm install -g firebase-tools
     - name: Deploy
-      run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+      uses: w9jds/firebase-action@master
+      if: success()
+      with:
+        args: deploy --only hosting
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+
