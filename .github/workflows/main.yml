@@ -12,8 +12,8 @@ jobs:
       run: yarn install
     - name: Build
       run: yarn build
-      uses: w9jds/firebase-action@master
     - name: Deploy
+      uses: w9jds/firebase-action@master
       if: success()
       with:
         args: deploy --only hosting
