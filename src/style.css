@@ -1,89 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 ::selection {
-    background: #ffff2d;
+  background: #ffff2d;
 }
 
 main {
-    width: 100%;
-    max-width: 1024px;
-    margin: auto;
-    padding: calc(40px + 1.5vw) calc(20px + 1vw);
+  width: 100%;
+  max-width: 720px;
+  margin: auto;
+  padding: calc(40px + 1.5vw) calc(20px + 1vw);
 }
 
 h1 {
-    font-size: calc(1.6em + 0.75vw);
-    color: #3958dc;
-    margin-bottom: 0.25em;
+  font-size: calc(1.6em + 0.75vw);
+  color: #3958dc;
+  margin-bottom: 0.25em;
 }
 
 h2 {
-    font-size: calc(1.2em + 0.6vw);
-    line-height: 1.5;
-    margin: 0;
+  font-size: calc(1.2em + 0.6vw);
+  line-height: 1.5;
+  margin: 0;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 p {
-    font-family: georgia, serif;
-    font-size: calc(1em + 0.5vw);
-    line-height: 1.5;
+  font-family: georgia, serif;
+  font-size: calc(1em + 0.5vw);
+  line-height: 1.5;
 }
 
 p.highlight {
-    font-size: calc(1.2em + 0.8vw);
-    line-height: 1.25;
+  font-size: calc(1.2em + 0.8vw);
+  line-height: 1.25;
 }
 
 p + p {
-    margin-top: calc(1em + 0.75vw);
+  margin-top: calc(1em + 0.75vw);
 }
 
 h2 > a,
 p > a {
-    transition: background 200ms;
-    background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        transparent 60%,
-        #68ffb6 60%,
-        #68ffb6 100%
-    );
+  transition: background 200ms;
+  background: linear-gradient(to bottom, transparent 0%, transparent 60%, #68ffb6 60%, #68ffb6 100%);
 }
 
 h2 > a:hover,
 p > a:hover {
-    background-color: #68ffb6;
+  background-color: #68ffb6;
 }
 
 .social-icon {
-    display: inline-block;
-    width: calc(14px + 1vw);
-    color: #f357bb;
+  display: inline-block;
+  width: calc(14px + 1vw);
+  color: #f357bb;
 }
 
 .social-icon + .social-icon {
-    margin-left: 1em;
+  margin-left: 1em;
 }
 
 .social-icon:hover {
-    animation: psychedelia 200ms infinite;
+  animation: psychedelia 200ms infinite;
 }
 
 @keyframes psychedelia {
-    0% {
-        color: #68ffb6
-    }
-    50% {
-        color: #f357bb;
-    }
-    100% {
-        color: #3958dc;
-    }
+  0% {
+    color: #68ffb6;
+  }
+  50% {
+    color: #f357bb;
+  }
+  100% {
+    color: #3958dc;
+  }
 }
